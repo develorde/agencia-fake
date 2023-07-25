@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ysabeau+SC:wght@1;100;200;400;500;600&display=swap'); /*  PRIMEIRO ENTRA NO GOOGLE FONTS E ESCOLHE A TIPOGRAFIA DA FONTE, APÓS ISSO copia e cola*/
+
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+margin: 0;
+
+}
+
+.container{
+    display: flex; /* USAMOS DISPLAY DO TIPO FLEX PARA DEIXAR UM ITEM DO LADO DO OUTRO */
+    flex-flow: row wrap; /* é usado quando queremos que os itens sejam dispostos em uma linha horizontal e, se necessário, quebrem para a próxima linha quando não houver espaço suficiente na linha atual.*/
+    height: 100px; /* ALTURA*/ 
+    background: white;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.logo{
+font-family: 'Lobster', cursive;
+flex: 25%;  /*Tamanho da largura do elemento logo em relação a DIV .CONTAINER */
+margin-left: 7%; 
+color: #180f4a;
+text-align: center;
+font-size: 18px;
+
+
+
+}
+
+
+
+.menu{
+flex: 67%;  /*Tamanho da largura do elemento logo em relação a DIV .CONTAINER ---- 80% DO TOTAL */
+text-align: right; /*USAMOS TEXT-ALIGN PARA POSICIONAR O MENU AO LADO DIREITO DA PAGINA */  
+padding: 20px; /* USAMOS PADDING PARA AUMENTAR ÁREA DE CLIQUE */ 
+font-family: 'Ysabeau SC', sans-serif; /* FONTE IMPORTADA DO GOOGLE FONTS */ 
+margin-right: 3px ;
+
+}
+
+.menu a{
+    padding: 15px;
+    color: #180f4a;
+    text-decoration: none; /* remove sublinhado debaixo dos links */
+    font-size:  15px; /* tamanho do texto */ 
+
+
+}
+
+.menu a:hover{
+color: #ff2978
+;
+border-top: 4px solid #180f4a
+;
+
+}
+
+#botao{
+background: #180f4a;
+padding: 10px 25px; /*10 ALTURA X 25 LARGURA */
+border-radius: 5px;
+color: white;
+margin-left: 5%; /* Isola 5% dos outros itens do menu */
+margin-right: 10%;
+font-size:  15px;
+}
+
+#botao:hover{
+background: #ff2978 ;
+border-top: none;
+
+}
+
+
+.header{
+
+    display: flex; /* DISPLAY DO TIPO FLEX ENTRA NA HEADER QUE ENVOLVE AS HEADS DA DIREITA E DA ESQUERDA*/ 
+    flex-flow: row wrap;
+    height: 500px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+
+}
+.headline-left{
+flex: 40%; /* O SOMATÓRIO DE TODOS OS FLEXS + MARGIN DEVERÁ SER DE 100%*/ 
+margin-left: 10%;
+}
+
+.headline-left h2{
+font-weight: 900; /* PESO DA FONTE -- Efeito negrito*/
+font-size: 20px; /* TAMANHO DA FONTE*/
+color: #180f4a;
+padding: 0; /* REMOVE A SEPARAÇÃO NO EIXO Y entre elementos de texto H2*/
+margin: 0;
+}
+
+.imgheadline{
+flex: 40%;
+text-align: center; /* DESLOCA A IMAGEM PARA O CENTRO NO EIXO X*/
+margin-right: 10%;
+
+
+}
+
+.headline-left p{
+ color: grey;
+ text-align: left;
+
+}
+
+.contact-btn{
+    display: inline-block;
+background: #ff2978;
+padding: 20px;
+color: white;
+text-transform: uppercase; /*TUDO MAIUSCULO */
+border-radius: 5px;
+text-decoration:  none;
+
+}
+
+.contact-btn:hover{
+    background: #180f4a;
+}
+
+section{
+margin-top: 80px;
+margin-left: 5%;
+margin-right:5%;
+text-align: center;
+
+}
+
+section h2{
+width: 100%;
+font-size: 50px;
+margin: 0;
+font-family: 'Lobster', cursive;
+font-weight: bold;
+color: #180f4a;
+
+}
+
+.sericos{
+display: inline-block;
+margin-top: 5%;
+
+}
+
+.card{
+    margin-top: 3%;
+display: inline-block;
+width: 30%;
+border: 1px solid #ff2978;
+border-radius: 5px;
+
+}
+
+.card h3{
+font-weight: bold;
+
+}
+
+
+.card:hover{
+color: white;
+background: #ff2978;
+padding: 40px;
+border-radius: 5px;
+}
+
+.card:hover img{
+    display: none; /*OCULTARÁ AS IMAGENS QUANDO O MOUSE PASSAR POR CIMA DO CARD*/
+}    
+
+.texto-oculto{
+display: none;
+/*O TEXTO OCULTO NÃO SERÁ MOSTRADO NO CARD PRINCIPAL */
+}
+
+.card:hover .texto-oculto{
+    display: block;
+    /*QUANDO PASSAR O MOUSE SOBRE O CARD COM TEXTO PRINCIPAL, O DISPLAY OCULTO SERÁ MOSTRADO*/
+}
+
+.card:hover .card-text{
+    display: none;
+    /*QUANDO PASSAR O MOUSE SOBRE O CARD COM TEXTO PRINCIPAL, O DISPLAY SERÁ NONE*/ 
+}
+
+
+footer {
+  margin-top: 300px;/*AFASTARÁ 300PX DA SECTION ACIMA*/
+height: 400px; /*300px de altura*/
+background-image:linear-gradient(180deg,#180f4a,#090422,#000000);
+color: white;
+text-align: center;
+border-top: 5px solid #ff2978;
+}
+
+.logo-rodape{
+padding: 100px;
+color: #180f4a;
+text-align: center;
+font-size: 18px;
+}
+
+.rodapeagencia{
+    font-family: 'Lobster', cursive;
+}
+
+.whats{
+position: fixed; /*A POSICAÇÃO SERÁ FIXA EM RELAÇÃO A PAGINA*/
+bottom: 5px; /*A IMAGEM ESTARÁ 5PX EM RELAÇÃO A PARTE DE BAIXO DO SITE*/
+right: 5px; /*A IMAGEM ESTARÁ 5PX EM RELAÇÃO A DIREITA DO SITE*/
+
+}
